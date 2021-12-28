@@ -221,6 +221,24 @@ LESS=+/EXAMPLES man limits.conf
 [error] 6180#0: *4 open() "/www/api/reload" failed (2: No such file or directory), client: 127.0.0.1, server: 127.0.0.1, request: "GET /api/reload HTTP/1.1", host: "localhost:55555"
 ```
 
+## Firmware
+
+- When I use binwalk and extracting the firmware file it says the file is MySQL MISAM filetype, I am unsure if this is a binwalk bug or not, output:
+
+```sh
+binwalk -Me 2021/1830710-7-2981008.rbi 
+
+Scan Time:     2021-12-28 15:00:28
+Target File:   /home/kubuntu/TECHNICOLOR_DGA433OTS/firmware/2021/1830710-7-2981008.rbi
+MD5 Checksum:  e12622f04704425ea2c7cf52c80ec6db
+Signatures:    411
+
+DECIMAL       HEXADECIMAL     DESCRIPTION
+--------------------------------------------------------------------------------
+8904736       0x87E020        MySQL MISAM compressed data file Version 11
+14608824      0xDEE9B8        MySQL ISAM index file Version 8
+```
+
 ## /etc files
 
 ### /etc/rc.d/S90fhcd
