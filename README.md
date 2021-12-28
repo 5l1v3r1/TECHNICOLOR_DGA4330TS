@@ -229,7 +229,7 @@ LESS=+/EXAMPLES man limits.conf
 binwalk -Me 2021/1830710-7-2981008.rbi 
 
 Scan Time:     2021-12-28 15:00:28
-Target File:   /home/kubuntu/TECHNICOLOR_DGA433OTS/firmware/2021/1830710-7-2981008.rbi
+Target File:   TECHNICOLOR_DGA433OTS/firmware/2021/1830710-7-2981008.rbi
 MD5 Checksum:  e12622f04704425ea2c7cf52c80ec6db
 Signatures:    411
 
