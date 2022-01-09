@@ -220,6 +220,26 @@ LESS=+/EXAMPLES man limits.conf
 ```sh
 [error] 6180#0: *4 open() "/www/api/reload" failed (2: No such file or directory), client: 127.0.0.1, server: 127.0.0.1, request: "GET /api/reload HTTP/1.1", host: "localhost:55555"
 ```
+## Curl
+
+- It is possible to inject hidden settings, ntp server is set in /etc/config/system so it might be possible to change other values as well. 
+
+```sh
+curl 'http://192.168.1.100/modals/gateway-modal.lp' \
+  -H 'Connection: keep-alive' \
+  -H 'Accept: text/html, */*; q=0.01' \
+  -H 'DNT: 1' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'Origin: http://192.168.1.100' \
+  -H 'Referer: http://192.168.1.100/gateway.lp' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Cookie: sessionID=4514d437a748c46c63964259cda91055ce4887853e8d1689a24c215e75e88354' \
+  --data-raw 'system_network_timezone=_DUMMY_&system_timezone=GMT0_timezone_Africa%2FAbidjan&action=SAVE&fromModal=YES&CSRFtoken=c7c237f206d264f03bcd562801111d161a1357f7a7dfdad53c62447763d8ed90' \
+  --compressed \
+  --insecure
+```
 
 ## Firmware
 
