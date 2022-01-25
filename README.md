@@ -1,6 +1,6 @@
-# Technicolor DGA433OTS
+# Technicolor DGA4330TS
 
-## Welcome DGA433OTS to my collections of Telia devices 
+## Welcome DGA4330TS to my collections of Telia devices 
 
 - I now have all the units they have delivered to customers :) 
 
@@ -8,9 +8,9 @@
 
 ![Screenshot](.previews/welcome.jpg)
 
-Well, let us keep topic @DGA433OTS
+Well, let us keep topic @DGA4330TS
 
-## Technicolor DGA433OTS
+## Technicolor DGA4330TS
 
 ![Screenshot](.previews/12.jpg)
 
@@ -45,7 +45,7 @@ ___
 
 Since there is **NO** info online about this board I thought it would be impossible to find the rbi files especially when they are locked out /modals/logviewer-modal.lp and you wont get access to it anymore as before, and we have no tcpdump modal in this router.
 
-The router has a setup like Sagemcom F@st 5370 (ya, that **sucks**, for us!) - An lxc enviroment, the default gateway ip for dga433ots is:
+The router has a setup like Sagemcom F@st 5370 (ya, that **sucks**, for us!) - An lxc enviroment, the default gateway ip for DGA4330TS is:
 
     192.168.1.1 
   
@@ -61,7 +61,7 @@ ___
 
 ![Screenshot](https://i.imgur.com/jKTsh9G.png)
 
-  DGA433OTS board is VBNT-7 (no public firmware for this has been found as mentioned)
+  DGA4330TS board is VBNT-7 (no public firmware for this has been found as mentioned)
   
 - Well, we jump to what info I have found and can share that I have not found elsewhere so hopefully it might help someone who helps me who helps everyone ;)
 
@@ -249,7 +249,7 @@ curl 'http://192.168.1.100/modals/gateway-modal.lp' \
 binwalk -Me 2021/1830710-7-2981008.rbi 
 
 Scan Time:     2021-12-28 15:00:28
-Target File:   TECHNICOLOR_DGA433OTS/firmware/2021/1830710-7-2981008.rbi
+Target File:   TECHNICOLOR_DGA4330TS/firmware/2021/1830710-7-2981008.rbi
 MD5 Checksum:  e12622f04704425ea2c7cf52c80ec6db
 Signatures:    411
 
