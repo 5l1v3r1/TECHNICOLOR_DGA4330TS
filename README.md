@@ -1,34 +1,33 @@
 # Technicolor DGA4330TS
 
-## Welcome DGA4330TS to my collections of Telia devices 
+### Welcome DGA4330TS to my collections of Telia devices 
 
 - I now have all the units they have delivered to customers :) 
 
-## A small part of my collection
+### A small part of my collection
 
-![Screenshot](.previews/welcome.jpg)
+![welcome](https://user-images.githubusercontent.com/26827453/174461781-d22c00e8-c348-48c8-98e7-a5587b6ec417.jpg)
 
 Well, let us keep topic @DGA4330TS
 
-## Technicolor DGA4330TS
+### Technicolor DGA4330TS
 
-![Screenshot](.previews/12.jpg)
+![12](https://user-images.githubusercontent.com/26827453/174461794-99295c73-a4a8-4863-bcac-b60405b98637.jpg)
 
-## Board, overview
+### Board, overview
 
-![Screenshot](.previews/VBNT-7.png)
+![VBNT-7](https://user-images.githubusercontent.com/26827453/174461802-128d9995-025a-43cc-b1b8-50a49734e60d.png)
 
-## Board (Serial Console Pins)
+### Board (Serial Console Pins)
 
 Boot log will be uploaded later
 
 - Black = GND
 - Green = TRX
 
-![Screenshot](.previews/serial_console.jpg)
+![serial_console](https://user-images.githubusercontent.com/26827453/174461804-6a0bbd77-4c19-411f-b878-52645964a203.jpg)
 
-
-## `Intro`
+### `Intro`
 
 Never let the fear of striking out keep you from playing the game. New Device, New Firmware I will spend exactly as many hours as it takes to access the source code you refuse to share, you are violating the GPL v1,2 and 3 and since you wont share I will spend as many days it is needed to get what what I asked for in 14 months now. TeliaCompany is partly owned by the Swedish state and they do this, it's bad but who cares, if they dont I dont.
 
@@ -57,7 +56,7 @@ Surprised? How could you miss that? Nah, thats not so wierd since it is hidden -
 
 ___
 
-# VBNT-7
+## VBNT-7
 
 ![Screenshot](https://i.imgur.com/jKTsh9G.png)
 
@@ -220,7 +219,7 @@ LESS=+/EXAMPLES man limits.conf
 ```sh
 [error] 6180#0: *4 open() "/www/api/reload" failed (2: No such file or directory), client: 127.0.0.1, server: 127.0.0.1, request: "GET /api/reload HTTP/1.1", host: "localhost:55555"
 ```
-## Curl
+### Curl
 
 - It is possible to inject hidden settings, ntp server is set in /etc/config/system so it might be possible to change other values as well. 
 
@@ -241,7 +240,7 @@ curl 'http://192.168.1.100/modals/gateway-modal.lp' \
   --insecure
 ```
 
-## Firmware
+### Firmware
 
 - When I use binwalk and extracting the firmware file it says the file is MySQL MISAM filetype, I am unsure if this is a binwalk bug or not, output:
 
@@ -258,9 +257,6 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 8904736       0x87E020        MySQL MISAM compressed data file Version 11
 14608824      0xDEE9B8        MySQL ISAM index file Version 8
 ```
-
-## /etc files
-
 ### /etc/rc.d/S90fhcd
 
 ```json
